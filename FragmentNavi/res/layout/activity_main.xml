@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+     <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dbdbdb"
+            android:orientation="vertical" >
+
+         <FrameLayout 
+             android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+             <LinearLayout
+                android:id="@+id/fragmentRoot"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:orientation="horizontal" />
+             <LinearLayout
+                android:id="@+id/fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+             
+                android:orientation="vertical" >
+                 <Button 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="hahah"
+        		android:id="@+id/but"/>
+             </LinearLayout>
+              
+             
+         </FrameLayout>
+            
+
+            <LinearLayout
+                android:id="@+id/bottomList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/black"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg1"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbWeiXin"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/tab_weixin_normal"
+                        android:paddingTop="8dp"
+                        android:text="微信" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg2"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbAddress"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/tab_address_normal"
+                        android:paddingTop="8dp"
+                        android:text="通讯录" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg3"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbFind"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/tab_find_frd_normal"
+                        android:paddingTop="8dp"
+                        android:text="发现" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/bottomItemCurrentBg4"
+                    style="@style/main_bottom_item" >
+
+                    <RadioButton
+                        android:id="@+id/rbMe"
+                        style="@style/footbar"
+                        android:drawableTop="@drawable/tab_settings_normal"
+                        android:paddingTop="8dp"
+                        android:text="我" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>
